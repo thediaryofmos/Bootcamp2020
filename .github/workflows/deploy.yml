@@ -31,6 +31,6 @@ jobs:
         with:
           node-version: 12
       - name: Install Surge
-        uses: npn install -g surge
+        uses: npm install -g surge
       - name: Run Surge
         run: surge ./ osmeapp.surge.sh --token ${{secrets.SURGE_TOKEN}}
