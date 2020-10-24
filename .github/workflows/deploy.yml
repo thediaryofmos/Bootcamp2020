@@ -33,4 +33,4 @@ jobs:
       - name: Install Surge
         uses: npn install -g surge
       - name: Run Surge
-        run: surge ./ osmeapp.surge.sh --token ${{secret.SURGE_TOKEN}}
+        run: surge ./ osmeapp.surge.sh --token ${{secrets.SURGE_TOKEN}}
